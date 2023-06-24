@@ -1,6 +1,6 @@
 # HSIAO-LUN WANG
 _Laser Integration and Photonic IC designer_ <br>
-hsiaolunwang256@gmial.com | [my Resume](https://veisec.github.io/resume_hlw/)<br>
+hsiaolunwang256@gmail.com | [my Resume](https://veisec.github.io/resume_hlw/)<br>
 [LinkedIn](https://www.linkedin.com/in/hsiao-lun-wang/) | [GitHub](https://github.com/veisec) <br>
 
 
