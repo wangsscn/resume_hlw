@@ -19,12 +19,12 @@ hsiaolunwang256@gmial.com | [my Resume](https://veisec.github.io/resume_hlw/)<br
 
 </ol>
 
-## <b><u>CURRENT POSITION</b></u>  
+## <b><u>CURRENT POSITION</u></b>  
 ### Postdoctoral Researcher at imec, Leuven 🇧🇪
 
 
-## <b><u>WORKING EXPERIENCE</b></u>
+## <b><u>WORKING EXPERIENCE</u></b>
 
 
-## <b><u>PROFESSIONAL SKILLS</b></u>
-## <b><u>PUBLICATIONS</b></u>
+## <b><u>PROFESSIONAL SKILLS</u></b>
+## <b><u>PUBLICATIONS</u></b>
