@@ -3,3 +3,13 @@ CV/
 photos/
 
 .DS_Store
+
+# latex acompany files
+hlw_resume.aux
+hlw_resume.fdb_latexmk
+hlw_resume.fls
+hlw_resume.log
+hlw_resume.out
+hlw_resume.pdf
+hlw_resume.synctex.gz
+q.log
