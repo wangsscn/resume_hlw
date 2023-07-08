@@ -62,13 +62,24 @@
     \end{tabular*}\vspace{-5pt}
 }
 
-\newcommand{\resumeSubheading}[4]{
+\newcommand{\resumeSubheading}[6]{
   \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & {#2} \\
-      {\small#3} & \textit{\small #4} \\
+      \textbf{#1} & \textit{\small #2} \\
+      \textbf{#3} & \textit{\small #4} \\
+      {#5} & \textit{\small #6} \\
     \end{tabular*}\vspace{-5pt}
 }
+
+\newcommand{\resumeEducation}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #2} \\
+      {#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
 
 \newcommand{\resumeSubSubheading}[2]{
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
@@ -78,7 +89,9 @@
 
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
 
-\renewcommand{\labelitemii}{$\circ$}
+% \renewcommand{\labelitemii}{$\circ$}
+% \renewcommand{\labelitemi}{$\circ$}
+\renewcommand{\labelitemii}{-}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
@@ -94,7 +107,7 @@
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}} r}
   \textbf{\href{https://veisec.github.io/resume_hlw/}{\Large Hsiao-Lun Wang}} & Email: \href{mailto:hsiaolunwang256@gmail.com}{hsiaolunwang256@gmail.com}\\
-  \href{https://www.linkedin.com/in/hsiao-lun-wang}LinkedIn  \href{https://github.com/veisec} {GitHub}  & Mobile: \href{tel:+32 0492-80-22-82}{+32 492 80 22 82} \\
+  \href{https://www.linkedin.com/in/hsiao-lun-wang} {LinkedIn}  \href{https://github.com/veisec} {GitHub}  & Mobile: \href{tel:+32 0492-80-22-82}{+32 492 80 22 82} \\
   
 \end{tabular*}
 
@@ -102,27 +115,26 @@
 %-----------EDUCATION-----------------
 \section{Education}
   \resumeSubHeadingListStart
-    \resumeSubheading
-      {University of Illinois at Urbana-Champaign}{Urbana, IL, USA}
-      {Ph.D. degree in Electrical and Computer Engineering}{2020}
-    \resumeSubheading
-      {National Taiwan University}{Taipei, Taiwan}
-      {M.S. degree in Photonics and Optoelectronics}{2013}
-    \resumeSubheading
-      {National Taiwan University}{Taipei, Taiwan}
-      {B.S. degree in Engineering Science}{2010}
+    \resumeEducation
+    {Ph.D. Degree in Electrical and Computer Engineering}{2020}
+    {University of Illinois at Urbana-Champaign, Urbana, IL, USA}{}
+    \resumeEducation
+      {M.S. Degree in Photonics and Optoelectronics}{2013}
+      {National Taiwan University, Taipei, Taiwan}{}
+    \resumeEducation
+    {B.S. Degree in Engineering Science}{2010}
+    {National Taiwan University, Taipei, Taiwan}{}
   \resumeSubHeadingListEnd
 
 
-% \section{Education}
+% \section{Experiment}
 % \begin{itemize}[leftmargin=*]
-% \item 
+% \item[-]
 %   \begin{tabular*}{\linewidth}[t]{l@{\extracolsep{\fill}}r}  % the [t] makes huge difference
 %     {\textbf{University of Illinois at Urbana-Champaign}} & Urbana, IL, USA \\
 %     \textit{\small Ph.D. degree in Electrical and Computer Engineering} & \textit{2020} \\
 %   \end{tabular*}
-
-% \item NTU
+% \item \textbf{PostDoc at imec 3DSIP}
 % \end{itemize}
 
 
@@ -131,84 +143,122 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {IMEC}{Leuven, Belgium}
-      {PostDoc}{Feb 2022 - Present}
+      {Postdoctoral Researcher }{Feb 2022 - Present}
+      {imec - 3DSiP - Pathfinding}{Leuven, Belgium}
+      {Hybrid Laser Integration with Silicon Photonics}{}
       \resumeItemListStart
-        \resumeItem{laser1}
-          {tob}
-        \resumeItem{laser2}
-          {}
+        \resumeItem{PIC Design and Layout}
+          {Using internal isipp200 PDK to layout and tapeout intergratged InP/Si(N) laser devices}
+        \resumeItem{Laser Modeling}
+          {Numerically solved laser rate equation using Matlab and Python. DFB laser frequency noise and RIN modeling}
         \resumeItemListEnd
-      
-% --------Multiple Positions Heading------------
-%    \resumeSubSubheading
-%     {Software Engineer I}{Oct 2014 - Sep 2016}
-%     \resumeItemListStart
-%        \resumeItem{Apache Beam}
-%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
-%     \resumeItemListEnd
-%    \resumeSubHeadingListEnd
-%-------------------------------------------
 
     \resumeSubheading
-      {Lumentum}{San Jose, CA, USA}
       {Senior R\&D Engineer}{Sep 2020 - Oct 2021}
+      {Lumentum - 3D Sensing}{San Jose, CA, USA}
+      {Multi-Junction VCSEL Array}{}
       \resumeItemListStart
-        \resumeItem{work1}
-          {}
-        \resumeItem{work2}
-          {}
-        \resumeItem{work3}
+        \resumeItem{Chip design and testing coordination to meet product specs}
+          {VCSEL array LIV, near-field and far-field data analysis}
+        \resumeItem{Design and deliver 6-inch mass production chips to customers}
+          {Provide updates on the qualification to external customers and internal R\&D team}
+        \resumeItem{Tape-out test board for multi-junction VCSEL bandwidth characterization}
           {}
       \resumeItemListEnd
 
     \resumeSubheading
-      {HSIC, UIUC}{Urbana, IL, USA}
-      {Doctoral Research and Teaching assistant}{Aug 2015 - Aug 2020}
+      {Doctoral Research and Teaching Assistant}{Aug 2015 - Aug 2020}
+      {UIUC - HSIC}{Urbana, IL, USA}
+      {Microwave High-Speed VCSEL}{}
       \resumeItemListStart
-        \resumeItem{Proj1}
+        \resumeItem{50Gb/s VCSEL at 850 nm}
           {}
-        \resumeItem{Proj2}
+        \resumeItem{Single-mode 50 Gb/s VCSEL}
           {}
+        \resumeItem{Vertical-Cavity Transistor Laser}
+        {Process DOE and establish process flow for three-terminal transistor laser
+        - Improve oxidation control and demonstrate reliable micro-cavity process}
         \resumeItemListEnd
 
     \resumeSubheading
-      {Apple}{Cupertino, CA, USA}
-      {Hardware intern}{Summer 2019}
+      {Hardware Intern}{May 2019 - Aug 2019}
+      {Apple - PPO Engeering}{Cupertino, CA, USA}
+      {Thin-Film Optical Characterization}{}
       \resumeItemListStart
-        \resumeItem{work1}
-          {Research on machine learning for portfolio hedging and replication algorithms. Modeling low-risk \& continuous-return strategies. Developed the python library QSTK.}
-        \resumeItem{work2}
-          {}
+        \resumeItem{RI and Thickness of Reflectors}
+          {Conduct optical characterizations and analysis on thin-film samples}
         \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
 
-%-----------PROJECTS-----------------
-\section{Projects}
+% %-----------PROJECTS-----------------
+% \section{Projects}
+%   \resumeSubHeadingListStart
+%     \resumeSubItem{QuantSoftware Toolkit}
+%       {Open source python library for financial data analysis and machine learning for finance.}
+%     \resumeSubItem{Github Visualization}
+%       {Data Visualization of Git Log data using D3 to analyze project trends over time.}
+%     \resumeSubItem{Recommendation System}
+%       {Music and Movie recommender systems using collaborative filtering on public datasets.}
+%     \resumeSubItem{Mac Setup}
+%       {Book that gives step by step instructions on setting up developer environment on Mac OS.}
+%   \resumeSubHeadingListEnd
+
+%-----------Engineer Skills-----------------
+\section{Engineer Skills}
   \resumeSubHeadingListStart
-    \resumeSubItem{QuantSoftware Toolkit}
-      {Open source python library for financial data analysis and machine learning for finance.}
-    \resumeSubItem{Github Visualization}
-      {Data Visualization of Git Log data using D3 to analyze project trends over time.}
-    \resumeSubItem{Recommendation System}
-      {Music and Movie recommender systems using collaborative filtering on public datasets.}
-    \resumeSubItem{Mac Setup}
-      {Book that gives step by step instructions on setting up developer environment on Mac OS.}
+    \resumeSubItem{Chip Design and Layout}
+      {Lumerical, IPKISS, GDStk}
+
+    \resumeSubItem{Scripting Languages}
+      {python, MATLAB, bash, Latex, JMP}
+
+    \resumeSubItem{Device Modeling}
+      {python and Matlab for laser rate equations}
+
+    \resumeSubItem{VCSEL Fabrications}
+      {lithography, nitride/oxide deposition (PECVD), Freon and chlorine based etching (ICP-
+      RIE), metal deposition (E-beam), wet thermal oxidation (tube furnace), SEM}
+
+    \resumeSubItem{Optical Characterization and Testing}
+      {ellipsometer; thin-film reflectance and transmittance,LIV, spectrum, microwave optical bandwidth, s-parameters, link BERT}
+
   \resumeSubHeadingListEnd
 
 
-% --------PROGRAMMING SKILLS------------
-\section{Programming Skills}
- \resumeSubHeadingListStart
-   \item{
-     \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, Java}
-     \hfill
-     \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
-   }
- \resumeSubHeadingListEnd
+% % --------Engineer SKILLS------------
+% \section{Engineer Skills}
+%  \resumeSubHeadingListStart
+%    \item{
+%      \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, Java}
+%      \hfill
+%      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
+%    }
+%  \resumeSubHeadingListEnd
 
 
 %-------------------------------------------
+
+\section{Publications}
+\begin{enumerate}
+
+\item A. Marinins et al., "Wafer-Scale Hybrid Integration of InP DFB Lasers on Si Photonics by Flip-Chip Bonding With sub-300 nm Alignment Precision," in IEEE JSTQE, vol. 29, no. 3, pp. 1-11, 2023.
+\item J. Qiu, D. Wu, H. -L. Wang, M. Feng and X. Yu, "Advanced Single-Mode 850 nm VCSELs for Record NRZ and PAM4 Data Rate on SMF-28 Fiber up to 1 km," 2021 Optical Fiber Communications Conference and Exhibition (OFC), San Francisco, CA, USA, 2021, pp. 1-3.
+\item H.L. Wang, J. Qiu, X. Yu, W. Fu and M. Feng, “The Modal Effect of VCSELs on Transmitting Data-Rate over Distance in OM4 Fiber”, IEEE J. Quantum Electron., vol. 56, no. 6, pp. 1–6, Dec. 2020.  
+\item H. L. Wang, W. Fu, J. Qiu and M. Feng, “850 nm VCSELs for 50 Gb/s NRZ Error-Free Transmission over 100-meter OM4 and up to 115 oC Operation”, Optical Fiber Communication Conference and Exhibition (OFC), San Diego, USA (2019)   
+\item H. L. Wang, J. Qiu, X. Yu, M. Feng and N. Holonyak, Jr., “85°C Operation of 850 nm VCSELs Deliver a 42 Gb/s Error-Free Data Transmission for 100 meter MMF Link”, Optical Fiber Communication Conference and Exhibition (OFC), San Diego, USA (2018)
+\item J. Qiu, H. L. Wang, C. Wang, X. Yu and M. Feng, “40 Gb/s VCSELs Test Data Collection, Analysis and Process Problem Identification” 2017 CS MANTEEC, Indian Well, USA (2017) 
+\item H. L. Wang, Y. H. Huang, G. S. Cheng, S. W. Chang, and C. H. Wu, “Analysis of Tunable Internal Loss Caused by Franz-Keldysh Absorption in Transistor Lasers”, IEEE J. Sel. Topics Quantum Electron, vol. 21, no. 6, 1503007 (2015)
+\item H. H. Yang, W. C. Tu, H. L. Wang, and C. H. Wu, “Investigation of effective base transit time and current gain modulation of light-emitting transistors under different ambient temperatures”, Appl. Phys. Lett., vol. 105, 181119 (2014)
+\item H. L. Wang, H. H. Yang, and C. H. Wu, “Quantum Well Saturation Effect on the Reduction of Base Transit Time in Light-Emitting Transistors”, IEEE Trans. Electron Devices, vol. 61, no. 10, pp. 3472-3476 (2014)
+\item H. L. Wang, Y. J. Huang, and C. H. Wu, “Optical frequency response analysis of light-emitting transistors under different microwave configurations,” Appl. Phys. Lett., vol. 103, 051110 (2013)
+\item Y. M. Liao, H. L. Wang, Yuh-Renn Wu, and C. H. Wu, “The dependence of base dynamics and current gain in the InGaAs/GaAs light emitting transistors,” ISCS/IPRM 2013, Kobe, Japan, 2013
+\item H. L. Wang, P. H. Chou, and C. H. Wu, "Microwave determination of quantum-well capture and escape time in light-emitting transistors", IEEE Trans. Electron Devices, vol. 60, no. 3, pp. 1088-1091 (2013)
+\item P. H. Chou, H. L. Wang, and C. H. Wu, “Comparison of Electrical and Optical f3dB Bandwidth in Light-Emitting Transistors,” OPTIC 2012, Taipei, Taiwan, 2012
+\item P. H. Chou, H. L. Wang, and C. H. Wu, “The effect of aperture layout design on the multi-GHz operation of light-emitting transistors,” Proc. SPIE 8564, Nanophotonics and Micro/Nano Optics, 85640D, Beijing, China, 2012
+  
+\end{enumerate}
+
+
 \end{document}
